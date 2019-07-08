@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialization-mode: always
+
+mybatis:
+  mapper-locations: classpath:net/sunmonkey/dao/mapping/*.xml
+  type-aliases-package: net.sunmonkey.entity
+
+logging:
+  level:
+    net.sunmonkey.dao.mapper: debug
